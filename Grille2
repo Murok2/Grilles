@@ -1,0 +1,17 @@
+x1=100;
+y1=100;
+z=8;
+
+
+tol=0.2;
+
+ difference(){
+   cube([x1,y1,z]);
+   for (x=[9:18:85]){
+     for (y=[9:18:85]){
+       translate([x,y,-tol/2]){
+         cube(11);
+       }
+     }
+   }
+ }
